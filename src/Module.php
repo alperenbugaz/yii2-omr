@@ -1,37 +1,37 @@
 <?php
 
-namespace {{vendor}}\{{package}};
+namespace alperenbugaz\omr;
 
 use portalium\base\Event;
-use {{vendor}}\{{package}}\components\TriggerActions;
+use alperenbugaz\omr\components\TriggerActions;
 
 class Module extends \portalium\base\Module
 {
-    public static $tablePrefix = '{{package}}_';
+    public static $tablePrefix = 'omr_';
     
-    public static $name = '{{package}}';
+    public static $name = 'omr';
 
-    public static $description = '{{package}} Module';
+    public static $description = 'Omr Module';
 
     public $apiRules = [
         [
             'class' => 'yii\rest\UrlRule',
             'controller' => [
-                '{{package}}/default',
+                'omr/default',
             ]
         ],
     ];
     
     public static function moduleInit()
     {
-        self::registerTranslation('{{package}}','@{{vendor}}/{{package}}/messages',[
-            '{{package}}' => '{{package}}.php',
+        self::registerTranslation('omr','@alperenbugaz/omr/messages',[
+            'omr' => 'omr.php',
         ]);
     }
 
     public static function t($message, array $params = [])
     {
-        return parent::coreT('{{package}}', $message, $params);
+        return parent::coreT('omr', $message, $params);
     }
 
     /* 

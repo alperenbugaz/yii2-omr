@@ -1,6 +1,6 @@
 {
-	"name" : "{{vendor}}/yii2-{{package}}",
-	"description" : "{{package}} Module for Portalium (Yii2)",
+	"name" : "alperenbugaz/yii2-omr",
+	"description" : "omr Module for Portalium (Yii2)",
 	"type" : "portalium-module",
 	"license": "MIT",
 	"homepage" : "https://portalium.dev",
@@ -12,11 +12,11 @@
 		}
 	],
 	"support" : {
-		"issues" : "https://github.com/{{vendor}}/yii2-{{package}}/issues"
+		"issues" : "https://github.com/alperenbugaz/yii2-omr/issues"
 	},
 	"autoload" : {
 		"psr-4" : {
-			"{{vendor}}\\{{package}}\\" : "src/"
+			"alperenbugaz\\omr\\" : "src/"
 		}
 	}
 }
